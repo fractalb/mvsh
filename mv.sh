@@ -7,7 +7,7 @@ then
     mv -i "$@"
     if [ $? -eq 0 ]
     then
-        echo "renamed from $1 --> $2" >> "$2/$INFO_FILE" 
+        echo "renamed from $1 --> $2 on $(date -R)" >> "$2/$INFO_FILE"
 	tail -n 4 "$2/$INFO_FILE"
     fi
 else
